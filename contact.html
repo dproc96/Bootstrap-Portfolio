@@ -35,21 +35,24 @@
 
             <div class="pr-2 pl-2 mb-3">
 
-                <div class="container mt-3 bg-white dp-content border border-light">
+                <div class="container mt-3 bg-white dp-content border border-light pb-3">
                     <h2 class="border-bottom border-secondary mt-2" id="title"><strong>Contact</strong></h2>
 
                     <form action="submit.php">
-                        <label for="name">Name</label>
+                        <br>
+                        <label class="text-muted" for="name">Name</label>
                         <br>
                         <input class="form--input" type="text" id="name" name="name" placeholder="John Smith">
                         <br>
-                        <label for="email">Email</label>
+                        <br>
+                        <label class="text-muted" for="email">Email</label>
                         <br>
                         <input class="form--input" type="text" id="email" name="email" placeholder="example@gmail.com">
                         <br>
-                        <label for="message">Message</label>
                         <br>
-                        <textarea class="form--input" name="message" id="message" style="height:170px; width: 900px;"></textarea>
+                        <label class="text-muted" for="message">Message</label>
+                        <br>
+                        <textarea class="form--input" name="message" id="message" style="height:170px; width: 100%;"></textarea>
                     
                         <input type="submit" value="Submit" id="button-submit">
                     </form>

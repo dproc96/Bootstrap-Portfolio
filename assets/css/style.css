@@ -19,6 +19,20 @@ footer {
     max-width: 960px;
 }
 
+.dp-overlay {
+    background-color: #4aaaa5;
+}
+
+.gallery--element--name {
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding: 15px;
+    color: #ffffff;
+}
+
 #topbar {
     background-color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
