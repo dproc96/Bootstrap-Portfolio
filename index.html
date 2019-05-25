@@ -1,38 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         <title>Dan Proctor's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
     </head>
 
-    <body>
-        <div class="wrapper">
-            <header>
-                <div class="heading--content">
-                    <h1 class="myname">Dan Proctor</h1>
+    <body class="d-flex flex-column h-100">
+        <header id="topbar" class="border-bottom border-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 text-center text-white" id="name">
+                        <h2 class="mt-2"><strong>Dan Proctor</strong></h2>
+                    </div>
 
-                    <ul>
-                        <li class="heading--list__first"><a href="">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <div class="col-lg-5 col-md-3 col-sm-0"></div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                        <ul class="nav mt-2 justify-content-center">
+                            <li class="nav-item"><a class="nav-link active text-secondary" href="">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-secondary" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link text-secondary" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </header>
+            </div>
 
-            <div class="body--content">
-                <h1 class="body--heading">About Me</h1>
+            
+        </header>
 
-                <img id="profile" src="assets/images/profile.jpg" alt="Profile Photo">
+        <main role="main" class="flex-shrink-0">
 
-                <div id="body--bio">
+        <div class="pr-2 pl-2">
+
+            <div class="container mt-3 bg-white dp-content border border-light">
+
+                <h2 class="border-bottom border-secondary mt-2" id="title"><strong>About Me</strong></h2>
+
+                <img class="float-left mr-3" width="270px" src="assets/images/profile.jpg" alt="Profile Photo">
+
+                <div class="">
                     <p>I come to the world of Web Development with a short but varied background. I cut my teeth as a video and photo editor 7 years ago. From there, I began to work in graphic design where I had my first experience with web design on Sqoarespace. After that, I started doing social media marketing and worked on a website using Concrete5 and code written by someone else. I currently work in quality assurance where I specialize in report design (a.k.a. using Google Sheets and their built-in Javascript framework to make spreadsheets for my colleagues).</p>
 
                     <p>In my undergraduate degree, I studied Economics and Film History. Not the most obvious background for web development but I like to think it gives me a more outside the box mentality. Programing runs in my family though: my father went from studying Philosophy to programming, my mother went from Insurance to programming and my sister turned from Linguistics to programming. I think I am most excited to work in the back end because I do a lot of data manipulation in my current position and have a lot of fun with it</p>
                 </div>
+
             </div>
-        </div>
-        <footer>
-            Copyright &copy;
+
+            </div>
+
+            </main>
+        <footer class="footer mt-auto py-3 bg-secondary">
+            <div class="container text-center">
+                <span class="text-light">Copyright &copy;</span>
+            </div>
         </footer>
     </body>
 </html>
