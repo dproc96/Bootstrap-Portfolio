@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         <title>Contact</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
     </head>
 
-    <body>
-        <div class="wrapper">
-            <header>
-                <div class="heading--content">
-                    <h1 class="myname">Dan Proctor</h1>
+    <body class="d-flex flex-column h-100">
+        <header id="topbar" class="border-bottom border-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 text-center text-white" id="my-name">
+                        <h2 class="mt-2"><strong>Dan Proctor</strong></h2>
+                    </div>
 
-                    <ul>
-                        <li class="heading--list__first"><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+                    <div class="col-lg-5 col-md-3 col-sm-0"></div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                        <ul class="nav mt-2 justify-content-center">
+                            <li class="nav-item"><a class="nav-link text-secondary" href="index.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-secondary" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link text-secondary active" href="">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </header>
-
-            <div class="body--content">
-                <h1 class="body--heading">Contact</h1>
-
-                <form action="submit.php">
-                    <label for="name">Name</label>
-                    <input class="form--input" type="text" id="name" name="name" placeholder="John Smith">
-                
-                    <label for="email">Email</label>
-                    <input class="form--input" type="text" id="email" name="email" placeholder="example@gmail.com">
-                
-                    <label for="message">Message</label>
-                    <textarea class="form--input" name="message" id="message" style="height:170px; width: 900px;"></textarea>
-                
-                    <input type="submit" value="Submit" id="button-submit">
-                </form>
             </div>
-        </div>
+        </header>
 
-        <footer>
-            Copyright &copy;
+        <main role="main" class="flex-shrink-0">
+
+            <div class="pr-2 pl-2">
+
+                <div class="container mt-3 bg-white dp-content border border-light">
+                    <h2 class="border-bottom border-secondary mt-2" id="title"><strong>Contact</strong></h2>
+
+                    <form action="submit.php">
+                        <label for="name">Name</label>
+                        <br>
+                        <input class="form--input" type="text" id="name" name="name" placeholder="John Smith">
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input class="form--input" type="text" id="email" name="email" placeholder="example@gmail.com">
+                        <br>
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea class="form--input" name="message" id="message" style="height:170px; width: 900px;"></textarea>
+                    
+                        <input type="submit" value="Submit" id="button-submit">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer mt-auto py-3 bg-secondary">
+            <div class="container text-center">
+                <span class="text-light">Copyright &copy;</span>
+            </div>
         </footer>
     </body>
 </html>
